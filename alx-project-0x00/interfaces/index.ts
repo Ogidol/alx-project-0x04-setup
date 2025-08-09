@@ -3,5 +3,6 @@ export interface PillProps {
 }
 
 export interface ButtonProps {
-  style: string;
+  styles: string;
+  children: React.ReactNode;
 }

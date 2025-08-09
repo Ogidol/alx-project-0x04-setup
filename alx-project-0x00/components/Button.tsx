@@ -1,7 +1,7 @@
 import { ButtonProps } from "@/interfaces";
 
-const Pill: React.FC<ButtonProps> = ({ style }) => {
-  return <button className="rounded-md">{style}</button>;
+const Button: React.FC<ButtonProps> = ({ styles, children }) => {
+  return <button className={`border px-4 py-2 ${styles}`}>{children}</button>;
 };
 
-export default Pill;
+export default Button;
